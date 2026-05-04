@@ -103,7 +103,7 @@ if (navbar) {
 if (footer) {
   footer.innerHTML = `
 <p style="text-align:center">&copy; 2026 Vexon </p>
-<p style="text-align:center">Made with effort by Helwan IT students ❤️ </p>
+<p style="text-align:center">Made by FCAI-H students</p>
 
 `;
 }
