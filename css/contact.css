@@ -1,0 +1,160 @@
+.contact-page {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.contact-hero {
+  display: grid;
+  gap: var(--space-3);
+  padding: clamp(1.25rem, 4vw, 2.5rem) 0 var(--space-2);
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: var(--color-brand);
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-hero h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.contact-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.contact-section-header {
+  display: grid;
+  gap: var(--space-3);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.contact-section-header h2 {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.contact-section-header p {
+  width: min(44rem, 100%);
+  margin: 0 auto;
+}
+
+.team-table-wrap {
+  overflow-x: auto;
+}
+
+.team-table {
+  width: 100%;
+  min-width: 38rem;
+  border-collapse: collapse;
+  background: var(--surface-raised);
+}
+
+.team-table th,
+.team-table td {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+.team-table th {
+  background: var(--surface-muted);
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.team-table td {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.team-table td:first-child {
+  text-align: left;
+}
+
+.team-table td:last-child,
+.team-table th:last-child {
+  width: 12rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.team-table tbody tr {
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.team-table tbody tr:hover {
+  background: var(--color-brand-soft);
+}
+
+.form-section {
+  background: var(--surface);
+}
+
+.form-frame-wrap {
+  padding: 0 clamp(0.75rem, 3vw, 1.5rem) clamp(0.75rem, 3vw, 1.5rem);
+}
+
+.form-frame-wrap iframe {
+  display: block;
+  min-height: 48rem;
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-xs);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .contact-hero,
+  .contact-section {
+    animation: contactFadeIn 420ms ease both;
+  }
+
+  .contact-section:nth-of-type(2) {
+    animation-delay: 80ms;
+  }
+}
+
+@keyframes contactFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-page {
+    gap: var(--space-5);
+  }
+
+  .contact-section {
+    border-radius: var(--radius-lg);
+  }
+
+  .contact-section-header {
+    text-align: left;
+  }
+
+  .team-table {
+    min-width: 32rem;
+  }
+
+  .team-table th,
+  .team-table td {
+    padding: 0.85rem;
+  }
+}

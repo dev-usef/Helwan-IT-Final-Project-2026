@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyStore</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/light-theme.css" id="theme-link">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+      
+  <header id="navbar"></header>
+
+    <main class="container">
+
+        <section class="main-banner">
+           <a href="shop.html"><img src="../images/products/banner.png"  alt="Vexon banner" class="banner-img"></a> 
+        </section>
+
+        <section class="categories">
+           <div class="category-item">
+                <div class="controller-container">
+                    <img src="../images/products/ps5-controller.png" alt="controller" >
+                </div>
+                <span>controllers</span>
+            </div>
+            </li>
+            <div class="category-item">
+                <div class="laptops-container">
+                    <img src="../images/products/macbook-pro.png" alt="Laptops"onclick="changeCategory('laptops')">
+                </div>
+                <span>Laptops</span>
+            </div>
+            
+            <div class="category-item">
+                <div class="Phone-container">
+                    <img src="../images/products/3.png" alt="Phones">
+                </div>
+                <span>phones</span>
+            </div>
+            
+            <div class="category-item">
+                <div class="cameras-container">
+                    <img src="../images/products/webcam.png" alt="Cameras">
+                </div>
+                <span>Cameras</span>
+            </div>
+
+            <div class="category-item">
+                <div class="accessories-container">
+                    <img src="../images/products/charging-cable.png" alt="accessories">
+                </div>
+                <span>Accessories</span>
+            </div>
+
+        </section>
+
+        <section class="flash-sale">
+            <div class="flash-content">
+                <div class="flash-text">
+                    <h3>NEW FEATURES</h3>
+                    <h2>FLASH SALE</h2>
+                    <p>DISCOUNT UP TO 40% OFF</p>
+                </div>
+                <div class="flash-products">
+                <img src="../images/products/iphone15.png" alt="Sale Phone 1" onclick="openDetails('iPhone 15')">
+                <img src="../images/products/galaxy.png" alt="Sale Phone 2" onclick="openDetails('Samsung Galaxy S24')">
+                <img src="../images/products/ps5-controller.png" alt="Sale Phone 3"onclick="openDetails('PS5 Controller')">
+                </div>
+            </div>
+        </section>
+
+        <section class="recommended-section">
+            <h2 class="section-title">Recommended for you</h2>
+            
+            <div class="carousel-container">
+                
+                <div class="carousel-container">
+
+  <!-- 7ot hena samsung s25 1 ya 3abod -->
+  <div class="product-card">
+    <div class="image-wrapper">
+      <img src="../images/products/1.png" onclick="openDetails('Samsung Galaxy S25')">
+    </div>
+
+    <div class="card-content">
+      <h3 class="product-title">Samsung Galaxy S25...</h3>
+      <div class="price-block">
+        <span class="currency">$899</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7ot hena samsung s25 2 ya 3abod -->
+  <div class="product-card">
+    <div class="image-wrapper">
+      <img src="../images/products/3.png" onclick="openDetails('Samsung Galaxy S25 Ultra')">
+    </div>
+
+    <div class="card-content">
+      <h3 class="product-title">Samsung Galaxy S25 Ultra...</h3>
+      <div class="price-block">
+        <span class="currency">$999</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7ot hena samsung ip16pm ya 3abod -->
+  <div class="product-card">
+    <div class="image-wrapper">
+      <img src="../images/products/4.png" onclick="openDetails('Apple iPhone 16 Pro Max')">
+    </div>
+
+    <div class="card-content">
+      <h3 class="product-title">Apple iPhone 16 Pro Max...</h3>
+      <div class="price-block">
+        <span class="currency">$1250</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7ot hena samsung ip17pm ya 3abod -->
+  <div class="product-card">
+    <div class="image-wrapper">
+      <img src="../images/products/2.png" onclick="openDetails('Apple iPhone 17 Pro Max')">
+    </div>
+
+    <div class="card-content">
+      <h3 class="product-title">Apple iPhone 17 Pro Max...</h3>
+      <div class="price-block">
+        <span class="currency">$1450</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+        </section>  
+    </main>
+
+    <footer id="footer"></footer>
+    <script>
+      function openDetails(productID){
+          window.location.href = `product-details.html?id=${productID}`;
+      }
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
