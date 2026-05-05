@@ -66,8 +66,8 @@
 #items-list{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-height: 250px;
-  gap: 20%;
+  max-height: 350px;
+  gap: 10%;
   padding: 10px;
   overflow-x: scroll;
 }
