@@ -65,7 +65,6 @@
 }
 #items-list{
   display: grid;
-  background-color: var(--cart-surface-soft);
   grid-template-columns: repeat(2, 1fr);
   max-height: 250px;
   gap: 20%;
