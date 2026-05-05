@@ -150,3 +150,20 @@ function filterByCategory(category) {
 if (grid && gridBtn && listBtn && pageIndicator && prevBtn && nextBtn && noResults) {
   render();
 }
+if (grid && gridBtn && listBtn && pageIndicator && prevBtn && nextBtn && noResults) {
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlCategory = urlParams.get('category');
+
+  if (urlCategory) {
+    window.filteredData = PRODUCTS.filter(p => {
+      const productCat = p.cat.toLowerCase();
+      const targetCat = urlCategory.toLowerCase();
+      
+      return productCat === targetCat || (targetCat === 'accessories' && productCat.includes('accessories'));
+    });
+  } else {
+    window.filteredData = [...PRODUCTS];
+  }
+  render();
+}
