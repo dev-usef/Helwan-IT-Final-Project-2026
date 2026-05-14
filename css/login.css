@@ -1,0 +1,99 @@
+.auth-page {
+  width: 90%;
+  max-width: 460px;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.auth-page > h2,
+.auth-card {
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form,
+.auth-message,
+.auth-divider,
+.auth-switch {
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  padding: 18px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.forgot-link,
+.auth-switch a {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.toggle-password,
+.toggle-pw {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 7px 10px;
+  background: #f1f4f9;
+  color: #222222;
+  border-color: #dddddd;
+}
+
+.btn-auth,
+.auth-btn {
+  width: 100%;
+}
+
+.auth-message {
+  margin-top: 15px;
+  text-align: center;
+  color: #666666;
+}
+
+.auth-message.is-error,
+.field-error,
+.field-hint {
+  color: #dc2626;
+}
+
+.auth-message.is-success,
+.field-hint.is-success {
+  color: #2563eb;
+}
+
+.auth-divider,
+.auth-switch {
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .field-meta {
+    display: block;
+  }
+}
+

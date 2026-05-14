@@ -1,0 +1,304 @@
+body.dark-theme {
+  background-color: #0b1220;
+  color: #ffffff;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6,
+.dark-theme label,
+.dark-theme span,
+.dark-theme li,
+.dark-theme td,
+.dark-theme th {
+  color: #ffffff;
+}
+
+.dark-theme p {
+  color: #cbd5e1;
+}
+
+/* Navbar */
+.dark-theme #navbar,
+.dark-theme #Navbar {
+  background-color: #1a2233;
+  border-bottom: 1px solid #334155;
+}
+
+.dark-theme .navbar a,
+.dark-theme .navbar button {
+  color: #ffffff;
+}
+
+.dark-theme .navbar a:hover,
+.dark-theme .navbar button:hover {
+  background-color: #1e293b;
+  color: #22c55e;
+}
+
+.dark-theme .user-name {
+  color: #22c55e;
+}
+
+/* kol elForms */
+.dark-theme input,
+.dark-theme textarea,
+.dark-theme select {
+  background-color: #1e293b;
+  color: #ffffff;
+  border: 1px solid #334155;
+}
+
+.dark-theme input:focus,
+.dark-theme textarea:focus,
+.dark-theme select:focus {
+  border-color: #22c55e;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+  color: #cbd5e1;
+}
+
+/* kol elButtons */
+.dark-theme button,
+.dark-theme .btn-primary,
+.dark-theme .Btn-primary,
+.dark-theme .auth-btn,
+.dark-theme .btn-auth,
+.dark-theme .add-to-cart-btn {
+  background-color: #22c55e;
+  color: #ffffff;
+  border-color: #22c55e;
+}
+
+.dark-theme button:hover,
+.dark-theme .btn-primary:hover,
+.dark-theme .Btn-primary:hover,
+.dark-theme .auth-btn:hover,
+.dark-theme .btn-auth:hover,
+.dark-theme .add-to-cart-btn:hover {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.dark-theme .btn-secondary,
+.dark-theme .toggle-view-btn,
+.dark-theme .wishlist-btn {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-color: #334155;
+}
+
+.dark-theme .toggle-view-btn.active,
+.dark-theme .toggle-view-btn:disabled {
+  background-color: #22c55e;
+  color: #ffffff;
+}
+
+.dark-theme .remove-btn,
+.dark-theme #clear-wishlist,
+.dark-theme .btn-remove {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+/* Banners elly f home pg */
+.dark-theme .main-banner,
+.dark-theme .flash-sale,
+.dark-theme .category-item > div {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.dark-theme .category-item span,
+.dark-theme .flash-text h2 {
+  color: #ffffff;
+}
+
+.dark-theme .flash-text h3,
+.dark-theme .category-item:hover span {
+  color: #22c55e;
+}
+
+/* kol elProducts */
+.dark-theme .product-card,
+.dark-theme .simple-card,
+.dark-theme #category-list,
+.dark-theme #Products-wrapper,
+.dark-theme #Empty-state,
+.dark-theme .Auth-box {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.dark-theme .card-img,
+.dark-theme .image-wrapper,
+.dark-theme #Wishlist-grid .product-card img,
+.dark-theme .View-grid .product-card img {
+  background-color: #111827;
+}
+
+.dark-theme .card-name,
+.dark-theme .product-title,
+.dark-theme #Wishlist-grid .product-card h4,
+.dark-theme .View-grid .product-card h4 {
+  color: #ffffff;
+}
+
+.dark-theme .card-price,
+.dark-theme .currency,
+.dark-theme #Wishlist-count,
+.dark-theme #Wishlist-grid .product-card p,
+.dark-theme .View-grid .product-card p,
+.dark-theme .Back-navigation a,
+.dark-theme .Register-text a {
+  color: #22c55e;
+}
+
+.dark-theme #category-list li:hover,
+.dark-theme #category-list li.active {
+  background-color: #111827;
+  color: #22c55e;
+}
+
+.dark-theme #page-buttons span,
+.dark-theme #no-results {
+  color: #cbd5e1;
+}
+
+/* Cart */
+.dark-theme .ordersummary,
+.dark-theme .input_info,
+.dark-theme .item-cart {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.dark-theme .ordersummary h1 {
+  background-color: #1a2233;
+  border-bottom: 1px solid #334155;
+}
+
+.dark-theme .shop_table {
+  border-bottom: 1px solid #334155;
+}
+
+.dark-theme .item-cart-price,
+.dark-theme .total_checkout,
+.dark-theme .subtotal_checkout {
+  color: #22c55e;
+}
+
+/* Product Details */
+.dark-theme main.container > div {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.dark-theme main.container > div > div:first-child {
+  background-color: #111827;
+}
+
+.dark-theme #product-cat,
+.dark-theme #product-price,
+.dark-theme #message-area {
+  color: #22c55e;
+}
+
+.dark-theme main.container a[href="shop.html"] {
+  background-color: #111827;
+  color: #ffffff;
+  border-color: #334155;
+}
+
+/* Login And Signup */
+.dark-theme .auth-page > h2,
+.dark-theme .auth-card,
+.dark-theme .auth-form,
+.dark-theme .auth-message,
+.dark-theme .auth-divider,
+.dark-theme .auth-switch {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.dark-theme .forgot-link,
+.dark-theme .auth-switch a,
+.dark-theme .field-hint.is-success,
+.dark-theme .auth-message.is-success {
+  color: #22c55e;
+}
+
+.dark-theme .field-error,
+.dark-theme .field-hint,
+.dark-theme .auth-message.is-error {
+  color: #fb7185;
+}
+
+.dark-theme .toggle-password,
+.dark-theme .toggle-pw {
+  background-color: #111827;
+  color: #ffffff;
+  border-color: #334155;
+}
+
+.dark-theme .contact-section {
+  background-color: #1e293b;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.dark-theme .contact-subtitle {
+  color: #22c55e;
+}
+
+.dark-theme .team-table th,
+.dark-theme .team-table tr:hover {
+  background-color: #111827;
+}
+
+.dark-theme .team-table td,
+.dark-theme .team-table th {
+  border-top: 1px solid #334155;
+}
+
+.dark-theme .form-frame-wrap iframe {
+  background-color: #1e293b;
+}
+
+/* Footer */
+.dark-theme #footer {
+  background-color: #1a2233;
+  border-top: 1px solid #334155;
+}
+
+.dark-theme #footer p {
+  color: #cbd5e1;
+}
+
+@media (max-width: 760px) {
+  .dark-theme .navbar {
+    background-color: #1a2233;
+  }
+}
+
+@media (min-width: 761px) {
+  body.dark .navbar {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 760px) {
+  body.dark .navbar ul {
+    flex-direction: row-reverse;
+  }
+}
