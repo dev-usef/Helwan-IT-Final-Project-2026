@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wishlist - Vexon</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/light-theme.css" id="theme-link" />
+    <link rel="stylesheet" href="../css/wishlist-style.css" />
+  </head>
+
+  <body>
+    <header id="Navbar"></header>
+
+    <main class="container">
+      <section id="Products-wrapper">
+        <header class="Section-header">
+          <h2>My Wishlist</h2>
+          <p id="Wishlist-count">0 Items</p>
+          <button id="clear-wishlist" class="btn-secondary">Clear All</button>
+        </header>
+
+        <div id="Wishlist-grid" class="View-grid"></div>
+
+        <div id="Empty-state" class="Hidden">
+          <div class="Empty-icon"></div>
+          <h3>Your wishlist is empty!</h3>
+          <p>Explore our shop and add your favorite items here.</p>
+          <a href="shop.html" class="Btn-primary">Go to Shop</a>
+        </div>
+
+        <div class="Back-navigation">
+          <a href="shop.html">← Back to Shopping</a>
+        </div>
+      </section>
+
+      <section id="Recommendations" class="Container">
+        <hr style="border: 0.5px solid var(--border); margin: 40px 0" />
+        <h3 style="margin-bottom: 20px">You might also like</h3>
+        <div id="Recommendations-grid" class="View-grid"></div>
+      </section>
+
+      <div id="Auth-guest-view" class="Hidden">
+        <div class="Auth-box">
+          <h3>Login Required</h3>
+          <p>
+            Please log in to your account to view and manage your saved items.
+          </p>
+
+          <a href="login.html" class="Btn-primary">Login Now</a>
+
+          <p class="Register-text">
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/wishlist.js"></script>
+  </body>
+</html>
